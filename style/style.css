@@ -41,13 +41,20 @@ header{
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: bold;
-  color: black;
-  
+  color: black; 
+  padding: 10px;
+  border-radius: 1rem;
+  transition: cubic-bezier(.28,-0.71,.65,1.59) 0.3s;
+}
+.nav-header-content li a:hover{
+  background-image: linear-gradient(hsla(0, 0%, 100%, 0.2), hsla(0, 0%, 100%, 0.5));
+  backdrop-filter: blur(2em);
+  box-shadow: 3px 2px 2px hsla(0, 0%, 0%, 0.2);
 }
 
 main {
   margin-top: 6rem;
-  margin-right: 200px; /* Same as the width of the sidenav */
+  margin-right: 300px; /* Same as the width of the sidenav */
   font-size: 1rem; /* Increased text to enable scrolling */
   padding: 0px 1.5rem;
 }
@@ -75,19 +82,19 @@ main {
 
 .sidenav {
   height: 100%;
-  width: 200px;
+  width: 300px;
   position: fixed;
   z-index: 1;
   top: 0;
   right: 0;
   background-color: #111;
   overflow-x: hidden;
-  padding-top: 60px;
+  padding-top: 5.2rem;
 }
 
 .sidenav ul li .dropdown-btn{
   text-decoration: none;
-  padding-left: 1.5rem;
+  padding-left: 3rem;
 }
 
 .sidenav ul li, .dropdown-btn {
@@ -105,11 +112,13 @@ main {
 }
 
 .sidenav a:hover, .dropdown-btn:hover {
-  color: black;
+  color: white;
 }
 
 .active {
   background-image: linear-gradient(#59FF43, #57FFDE);
+}
+.active:hover{
   color: black;
 }
 .dropdown-content{
@@ -119,5 +128,5 @@ main {
 .dropdown-content {
   display: none;
   background-color: #262626;
-  padding-left: 2rem;
+  padding-left: 4rem;
 }
