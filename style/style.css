@@ -1,0 +1,123 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Ubuntu', sans-serif;
+}
+body::-webkit-scrollbar{
+  width: 0.5rem;
+}
+body::-webkit-scrollbar-track{
+  background: #2F3644;
+}
+body::-webkit-scrollbar-thumb{
+  background-image: linear-gradient(#59FF43, #57FFDE);
+  border-radius: 2.0rem;
+}
+span{
+  color: #111;
+  font-weight: bold;
+}
+header{
+  position: fixed;
+  height: 60px;
+  width: 100%;
+  top: 0;
+  z-index: 2;
+  padding: 20px 100px;
+  background-image: linear-gradient(#59FF43, #57FFDE);
+}
+
+.nav-header .nav-header-content{
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+  gap: 120px;
+}
+.nav-header-content li a{
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: black;
+  
+}
+
+main {
+  margin-top: 6rem;
+  margin-right: 200px; /* Same as the width of the sidenav */
+  font-size: 1rem; /* Increased text to enable scrolling */
+  padding: 0px 1.5rem;
+}
+.content{
+  width: 60vw;
+  margin-inline: auto;
+}
+.content h1{
+  height: 3rem;
+  padding-top: 0.4rem;
+  background-image: linear-gradient(to left, hsla(113, 100%, 63%, 0), hsla(168, 100%, 67%, 1));
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 0.5rem;
+}
+.content h2, .content p{
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+.content h2{
+  background-image: linear-gradient(to left, hsla(113, 100%, 63%, 0), hsla(168, 100%, 67%, 1));
+  border-radius: 0.5rem;
+  padding: .1rem;
+}
+
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 60px;
+}
+
+.sidenav ul li .dropdown-btn{
+  text-decoration: none;
+  padding-left: 1.5rem;
+}
+
+.sidenav ul li, .dropdown-btn {
+  padding: 6px 0px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width:100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+.sidenav a:hover, .dropdown-btn:hover {
+  color: black;
+}
+
+.active {
+  background-image: linear-gradient(#59FF43, #57FFDE);
+  color: black;
+}
+.dropdown-content{
+  transition: all linear 1s;
+}
+
+.dropdown-content {
+  display: none;
+  background-color: #262626;
+  padding-left: 2rem;
+}
